@@ -159,65 +159,65 @@ from sklearn.grid_search import GridSearchCV
 
 
 
-# rf = RandomForestClassifier()
+rf = RandomForestClassifier()
 
-# param_grid1 = {
-#                  'n_estimators': [170,180,190],
-#                  'max_depth': [11,13,15,17,19]
-#              }
+param_grid1 = {
+                 'n_estimators': [170,180,190],
+                 'max_depth': [11,13,15,17,19]
+             }
 
-# grid_clf1 = GridSearchCV(rf, param_grid1, cv=5)
-# grid_clf1.fit(X_train, y)
+grid_clf1 = GridSearchCV(rf, param_grid1, cv=5)
+grid_clf1.fit(X_train, y)
 
-# print (gsearch1.grid_scores_)
-# print (gsearch1.best_params_)
-# print (gsearch1.best_score_)
+print (gsearch1.grid_scores_)
+print (gsearch1.best_params_)
+print (gsearch1.best_score_)
 
-# param_grid2 = {
-#                  'n_neighbors': [3,5,7,9],
-#              }
+param_grid2 = {
+                 'n_neighbors': [3,5,7,9],
+             }
 
-# knn = KNeighborsClassifier()
+knn = KNeighborsClassifier()
 
-# grid_clf2 = GridSearchCV(knn, param_grid2, cv=5)
-# grid_clf2.fit(X_train, y)
+grid_clf2 = GridSearchCV(knn, param_grid2, cv=5)
+grid_clf2.fit(X_train, y)
 
-# print (grid_clf2. best_params_)
+print (grid_clf2. best_params_)
 
-# param_grid3 = {
-#                  'n_estimators': [150,200,250,300],
-#                  'learning_rate' : [0.1,0.5,1.0]
-#              }
-# ada=AdaBoostClassifier()
+param_grid3 = {
+                 'n_estimators': [150,200,250,300],
+                 'learning_rate' : [0.1,0.5,1.0]
+             }
+ada=AdaBoostClassifier()
 
-# grid_clf3 = GridSearchCV(ada, param_grid3, cv=5)
-# grid_clf3.fit(X_train, y)
+grid_clf3 = GridSearchCV(ada, param_grid3, cv=5)
+grid_clf3.fit(X_train, y)
 
-# print (grid_clf3. best_params_)
+print (grid_clf3. best_params_)
 
 
-# param_grid4 = {
-#                   'n_estimators': [150,180,200],
-#                   'max_depth': [9,11,13,15]
-#              }
-# ef=ExtraTreesClassifier()
+param_grid4 = {
+                  'n_estimators': [150,180,200],
+                  'max_depth': [9,11,13,15]
+             }
+ef=ExtraTreesClassifier()
 
-# grid_clf4 = GridSearchCV(ef, param_grid4, cv=5)
-# grid_clf4.fit(X_train, y)
+grid_clf4 = GridSearchCV(ef, param_grid4, cv=5)
+grid_clf4.fit(X_train, y)
 
-# print (grid_clf4. best_params_)
+print (grid_clf4. best_params_)
 
-# param_grid5 = {
-#                   'n_estimators': [150,180,200],
-#                   'max_depth': [9,11,13,15]
-#              }
+param_grid5 = {
+                  'n_estimators': [150,180,200],
+                  'max_depth': [9,11,13,15]
+             }
 
-# gb=GradientBoostingClassifier()
+gb=GradientBoostingClassifier()
 
-# grid_clf5 = GridSearchCV(gb, param_grid5, cv=5)
-# grid_clf5.fit(X_train, y)
+grid_clf5 = GridSearchCV(gb, param_grid5, cv=5)
+grid_clf5.fit(X_train, y)
 
-# print (grid_clf5. best_params_)
+print (grid_clf5. best_params_)
 
 #rf = RandomForestClassifier(n_estimators=180,max_depth=11)
 # knn=KNeighborsClassifier(n_neighbors=9)
